@@ -129,6 +129,7 @@ $(document).ready(function () {
 </ul></li>
 <li><a href="#vectorized-operations">Vectorized Operations（基于元素的操作）</a><ul>
 <li><a href="#vector-in-vector-out">Vector In, Vector Out</a></li>
+<li><a href="#vector-in-matrix-out">Vector In, Matrix Out</a></li>
 </ul></li>
 <li><a href="#na-vs-null"><code>NA</code> vs <code>NULL</code></a></li>
 <li><a href="#filter">Filter</a><ul>
@@ -418,7 +419,11 @@ cumsum(y)</code></pre>
 <h1>Vectorized Operations（基于元素的操作）</h1>
 <div id="vector-in-vector-out" class="section level2">
 <h2>Vector In, Vector Out</h2>
-<p>前面介绍的操作都有涉及到标题，输出类型都是<code>vector</code> ## Vector In, Matrix Out 用<code>vector</code>生成<code>matrix</code></p>
+<p>前面介绍的操作都有涉及到标题，输出类型都是<code>vector</code></p>
+</div>
+<div id="vector-in-matrix-out" class="section level2">
+<h2>Vector In, Matrix Out</h2>
+<p>用<code>vector</code>生成<code>matrix</code></p>
 <pre class="r"><code>z12 &lt;- function(z) return(c(z,z^2))
 x &lt;- 1:8
 z12(x)</code></pre>
